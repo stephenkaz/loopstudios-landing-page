@@ -34,6 +34,14 @@ li {
   width: 80%;
 }
 
+.open-nav {
+  display: block;
+}
+
+.nav__links {
+  display: none;
+}
+
 .header-bg-img {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.1))), url(/images/mobile/image-hero.jpg);
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url(/images/mobile/image-hero.jpg);
@@ -265,6 +273,9 @@ li {
 @media only screen and (min-width: 64.063em) and (max-width: 90em) {
   .logo {
     width: 80%;
+  }
+  .open-nav {
+    display: none;
   }
   .header-bg-img {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.1))), url(/images/desktop/image-hero.jpg);

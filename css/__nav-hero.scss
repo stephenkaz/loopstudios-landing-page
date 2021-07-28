@@ -11,6 +11,14 @@ $ff-2: "Josefin Sans", sans-serif;
   width: 80%;
 }
 
+.open-nav {
+  display: block;
+}
+
+.nav__links {
+  display: none;
+}
+
 .header-bg-img {
   background-image: linear-gradient(
       to right,
