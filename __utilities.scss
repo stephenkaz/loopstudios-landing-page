@@ -1,0 +1,42 @@
+// Primary
+$white: hsl(0, 0%, 100%);
+$black: hsl(0, 0%, 0%);
+$darkGray: hsl(0, 0%, 55%);
+$veryDarkGray: hsl(0, 0%, 41%);
+//font-family
+$ff-1: "Alata", sans-serif;
+$ff-2: "Josefin Sans", sans-serif;
+
+.hidden {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.creations {
+  h2 {
+    color: $white;
+    font-family: $ff-2;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 4rem 0 1.5rem 1.5rem;
+    text-align: left;
+  }
+
+  .deep__earth,
+  .night__arcade,
+  .soccer__team,
+  .the__grid,
+  .from__above,
+  .pocket__borealis,
+  .curiosity,
+  .fisheye {
+    padding: 1.5rem 1.5rem 0 1.5rem;
+  }
+}
+
+li {
+  cursor: pointer;
+}
