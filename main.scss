@@ -1,0 +1,23 @@
+@import "__utilities";
+@import "_nav-hero";
+@import "_about";
+@import "_creations";
+@import "_footer";
+@import "_media-1440";
+
+// Primary
+$white: hsl(0, 0%, 100%);
+$black: hsl(0, 0%, 0%);
+$darkGray: hsl(0, 0%, 55%);
+$veryDarkGray: hsl(0, 0%, 41%);
+//font-family
+$ff-1: "Alata", sans-serif;
+$ff-2: "Josefin Sans", sans-serif;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
