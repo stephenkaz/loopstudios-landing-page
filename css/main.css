@@ -1,0 +1,347 @@
+.hidden {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.creations h2 {
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 4rem 0 1.5rem 1.5rem;
+  text-align: left;
+}
+
+.creations .deep__earth,
+.creations .night__arcade,
+.creations .soccer__team,
+.creations .the__grid,
+.creations .from__above,
+.creations .pocket__borealis,
+.creations .curiosity,
+.creations .fisheye {
+  padding: 1.5rem 1.5rem 0 1.5rem;
+}
+
+li {
+  cursor: pointer;
+}
+
+.logo {
+  width: 80%;
+}
+
+.header-bg-img {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.1))), url(/loopstudios-landing-page-main/images/mobile/image-hero.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url(/loopstudios-landing-page-main/images/mobile/image-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-bg-img nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2rem 1.5rem 0 1.5rem;
+}
+
+.header-bg-img .hero__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header-bg-img .hero__content h1 {
+  width: 100%;
+  color: white;
+  text-align: left;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-size: 2.5rem;
+  padding: 1.5rem;
+  border: 2px solid white;
+  margin: 11rem 1.5rem 14rem 1.5rem;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1.5rem;
+}
+
+.about .about__img {
+  background-image: url(/loopstudios-landing-page-main/images/mobile/image-interactive.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  padding: 7rem;
+  margin: 6rem auto 1.5rem auto;
+}
+
+.about .about__content {
+  text-align: center;
+}
+
+.about .about__content h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding-bottom: 1.5rem;
+}
+
+.about .about__content p {
+  padding: 0 2rem 7rem 2rem;
+  line-height: 2;
+  font-family: "Alata", sans-serif;
+  color: dimgray;
+}
+
+.creations h1 {
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+}
+
+.creations .deep__earth-bg {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.527)), to(rgba(0, 0, 0, 0.1))), url(/loopstudios-landing-page-main/images/mobile/image-deep-earth.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.1)), url(/loopstudios-landing-page-main/images/mobile/image-deep-earth.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.creations .night__arcade-bg {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.527)), to(rgba(0, 0, 0, 0.1))), url(/loopstudios-landing-page-main/images/mobile/image-night-arcade.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.1)), url(/loopstudios-landing-page-main/images/mobile/image-night-arcade.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.creations .soccer__team-bg {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.527)), to(rgba(0, 0, 0, 0.1))), url(/loopstudios-landing-page-main/images/mobile/image-soccer-team.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.1)), url(/loopstudios-landing-page-main/images/mobile/image-soccer-team.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.creations .the__grid-bg {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.527)), to(rgba(0, 0, 0, 0.1))), url(/loopstudios-landing-page-main/images/mobile/image-grid.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.1)), url(/loopstudios-landing-page-main/images/mobile/image-grid.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.creations .from__above-bg {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.527)), to(rgba(0, 0, 0, 0.1))), url(/loopstudios-landing-page-main/images/mobile/image-from-above.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.1)), url(/loopstudios-landing-page-main/images/mobile/image-from-above.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.creations .pocket__borealis-bg {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.527)), to(rgba(0, 0, 0, 0.1))), url(/loopstudios-landing-page-main/images/mobile/image-pocket-borealis.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.1)), url(/loopstudios-landing-page-main/images/mobile/image-pocket-borealis.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.creations .curiosity-bg {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.527)), to(rgba(0, 0, 0, 0.1))), url(/loopstudios-landing-page-main/images/mobile/image-curiosity.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.1)), url(/loopstudios-landing-page-main/images/mobile/image-curiosity.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.creations .fisheye-bg {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.527)), to(rgba(0, 0, 0, 0.1))), url(/loopstudios-landing-page-main/images/mobile/image-fisheye.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.1)), url(/loopstudios-landing-page-main/images/mobile/image-fisheye.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.creations .see__all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2.5rem 0 7.5rem 0;
+}
+
+.creations .see__all button {
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  font-family: "Alata", sans-serif;
+  font-size: 1rem;
+  background-color: white;
+  padding: 0.5rem 2.5rem;
+}
+
+.footer {
+  background-color: black;
+}
+
+.footer .footer__logo {
+  padding: 4rem 0 2rem 0;
+}
+
+.footer .footer__logo img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.footer .footer__nav nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1.5rem;
+  padding-bottom: 4rem;
+}
+
+.footer .footer__nav nav ul li {
+  list-style-type: none;
+  color: white;
+  font-family: "Alata", sans-serif;
+}
+
+.footer .footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+}
+
+.footer .copyright {
+  color: dimgray;
+  text-align: center;
+  font-family: "Alata", sans-serif;
+  padding: 1rem 0 4rem 0;
+}
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+  .logo {
+    width: 80%;
+  }
+  .header-bg-img {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.1))), url(/loopstudios-landing-page-main/images/desktop/image-hero.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url(/loopstudios-landing-page-main/images/desktop/image-hero.jpg);
+    background-size: 100%;
+  }
+  .header-bg-img nav {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 4rem 9rem;
+  }
+  .header-bg-img nav .nav__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 45%;
+  }
+  .header-bg-img nav .nav__links li {
+    list-style-type: none;
+  }
+  .header-bg-img nav .nav__links li a {
+    color: white;
+    font-family: "Alata", sans-serif;
+  }
+  .header-bg-img .hero__content {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    max-width: 40%;
+    margin-left: 9rem;
+  }
+  .header-bg-img .hero__content h1 {
+    width: 100%;
+    font-size: 4rem;
+    padding: 1.5rem;
+    margin: 4rem 0 9rem 0;
+  }
+  .about {
+    padding: 0;
+    position: relative;
+    margin-bottom: 10rem;
+  }
+  .about .about__img {
+    background-image: url(/loopstudios-landing-page-main/images/desktop/image-interactive.jpg);
+    width: 50%;
+    padding: 15rem;
+    margin: 8rem auto 5rem 8rem;
+  }
+  .about .about__content {
+    position: absolute;
+    top: 20rem;
+    bottom: 2rem;
+    right: 9rem;
+    left: 43rem;
+    padding: 4rem;
+    text-align: left;
+    background-color: white;
+  }
+  .about .about__content h1 {
+    font-size: 2.5rem;
+  }
+  .about .about__content p {
+    padding: 0;
+  }
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*# sourceMappingURL=main.css.map */
