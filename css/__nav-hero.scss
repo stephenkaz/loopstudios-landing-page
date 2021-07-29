@@ -7,19 +7,8 @@ $veryDarkGray: hsl(0, 0%, 41%);
 $ff-1: "Alata", sans-serif;
 $ff-2: "Josefin Sans", sans-serif;
 
-.logo {
-  width: 80%;
-}
-
-.open-nav {
-  display: block;
-}
-
-.nav__links {
-  display: none;
-}
-
 .header-bg-img {
+  grid-area: nav;
   background-image: linear-gradient(
       to right,
       rgba(0, 0, 0, 0.4),
@@ -27,21 +16,40 @@ $ff-2: "Josefin Sans", sans-serif;
     ),
     url(/images/mobile/image-hero.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
+
+  .open-nav {
+    display: block;
+  }
 
   nav {
+    grid-area: nav;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 2rem 1.5rem 0 1.5rem;
+    justify-content: space-around;
+    margin-top: 2rem;
+
+    .nav__links {
+      display: none;
+
+      li {
+        list-style-type: none;
+
+        a {
+          color: $white;
+          font-family: $ff-1;
+        }
+      }
+    }
   }
 
   .hero__content {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    grid-area: hero;
     h1 {
+      grid-area: nav;
       width: 100%;
       color: $white;
       text-align: left;
@@ -51,7 +59,7 @@ $ff-2: "Josefin Sans", sans-serif;
       font-size: 2.5rem;
       padding: 1.5rem;
       border: 2px solid $white;
-      margin: 11rem 1.5rem 14rem 1.5rem;
+      margin: 11rem 1.5rem 12rem 1.5rem;
     }
   }
 }

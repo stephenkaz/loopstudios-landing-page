@@ -8,6 +8,7 @@ $ff-1: "Alata", sans-serif;
 $ff-2: "Josefin Sans", sans-serif;
 
 .about {
+  grid-area: about;
   display: flex;
   flex-direction: column;
   padding: 1.5rem;
@@ -18,7 +19,7 @@ $ff-2: "Josefin Sans", sans-serif;
     background-size: 100%;
     width: 100%;
     padding: 7rem;
-    margin: 6rem auto 1.5rem auto;
+    margin: 5rem auto 1.5rem auto;
   }
 
   .about__content {
