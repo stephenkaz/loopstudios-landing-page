@@ -149,12 +149,67 @@ li {
   color: dimgray;
 }
 
-.creations {
+.creations__title {
   text-align: center;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 300;
   text-transform: uppercase;
   padding-bottom: 2rem;
+}
+
+.creations__title {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: creations;
+}
+
+.deep__earth-bg {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: deep;
+}
+
+.night__arcade-bg {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  grid-area: night;
+}
+
+.soccer__team-bg {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  grid-area: soccer;
+}
+
+.the__grid-bg {
+  -ms-grid-row: 5;
+  -ms-grid-column: 4;
+  grid-area: grid;
+}
+
+.from__above-bg {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: above;
+}
+
+.pocket__borealis-bg {
+  -ms-grid-row: 6;
+  -ms-grid-column: 2;
+  grid-area: pocket;
+}
+
+.curiosity-bg {
+  -ms-grid-row: 6;
+  -ms-grid-column: 3;
+  grid-area: curiosity;
+}
+
+.fisheye-bg {
+  -ms-grid-row: 6;
+  -ms-grid-column: 4;
+  grid-area: fisheye;
 }
 
 .deep__earth-bg {
@@ -224,6 +279,10 @@ li {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 2.5rem 0 7.5rem 0;
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: btn;
 }
 
 .see__all button {
@@ -401,42 +460,42 @@ li {
     -ms-grid-column-span: 4;
     grid-area: creations;
   }
-  .deep__earth-bg h2 {
+  .deep__earth-bg {
     -ms-grid-row: 5;
     -ms-grid-column: 1;
     grid-area: deep;
   }
-  .night__arcade-bg h2 {
+  .night__arcade-bg {
     -ms-grid-row: 5;
     -ms-grid-column: 2;
     grid-area: night;
   }
-  .soccer__team-bg h2 {
+  .soccer__team-bg {
     -ms-grid-row: 5;
     -ms-grid-column: 3;
     grid-area: soccer;
   }
-  .the__grid-bg h2 {
+  .the__grid-bg {
     -ms-grid-row: 5;
     -ms-grid-column: 4;
     grid-area: grid;
   }
-  .from__above-bg h2 {
+  .from__above-bg {
     -ms-grid-row: 6;
     -ms-grid-column: 1;
     grid-area: above;
   }
-  .pocket__borealis-bg h2 {
+  .pocket__borealis-bg {
     -ms-grid-row: 6;
     -ms-grid-column: 2;
     grid-area: pocket;
   }
-  .curiosity-bg h2 {
+  .curiosity-bg {
     -ms-grid-row: 6;
     -ms-grid-column: 3;
     grid-area: curiosity;
   }
-  .fisheye-bg h2 {
+  .fisheye-bg {
     -ms-grid-row: 6;
     -ms-grid-column: 4;
     grid-area: fisheye;
@@ -508,6 +567,10 @@ li {
         -ms-flex-pack: center;
             justify-content: center;
     margin: 2.5rem 0 7.5rem 0;
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-area: btn;
   }
   .see__all button {
     text-transform: uppercase;

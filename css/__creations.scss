@@ -7,12 +7,48 @@ $veryDarkGray: hsl(0, 0%, 41%);
 $ff-1: "Alata", sans-serif;
 $ff-2: "Josefin Sans", sans-serif;
 
-.creations {
+.creations__title {
   text-align: center;
   font-family: $ff-2;
   font-weight: 300;
   text-transform: uppercase;
   padding-bottom: 2rem;
+}
+
+.creations__title {
+  grid-area: creations;
+}
+
+.deep__earth-bg {
+  grid-area: deep;
+}
+
+.night__arcade-bg {
+  grid-area: night;
+}
+
+.soccer__team-bg {
+  grid-area: soccer;
+}
+
+.the__grid-bg {
+  grid-area: grid;
+}
+
+.from__above-bg {
+  grid-area: above;
+}
+
+.pocket__borealis-bg {
+  grid-area: pocket;
+}
+
+.curiosity-bg {
+  grid-area: curiosity;
+}
+
+.fisheye-bg {
+  grid-area: fisheye;
 }
 
 .deep__earth-bg {
@@ -98,6 +134,7 @@ $ff-2: "Josefin Sans", sans-serif;
   align-items: center;
   justify-content: center;
   margin: 2.5rem 0 7.5rem 0;
+  grid-area: btn;
 
   button {
     text-transform: uppercase;

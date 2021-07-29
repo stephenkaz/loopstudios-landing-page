@@ -100,51 +100,35 @@
   }
 
   .deep__earth-bg {
-    h2 {
-      grid-area: deep;
-    }
+    grid-area: deep;
   }
 
   .night__arcade-bg {
-    h2 {
-      grid-area: night;
-    }
+    grid-area: night;
   }
 
   .soccer__team-bg {
-    h2 {
-      grid-area: soccer;
-    }
+    grid-area: soccer;
   }
 
   .the__grid-bg {
-    h2 {
-      grid-area: grid;
-    }
+    grid-area: grid;
   }
 
   .from__above-bg {
-    h2 {
-      grid-area: above;
-    }
+    grid-area: above;
   }
 
   .pocket__borealis-bg {
-    h2 {
-      grid-area: pocket;
-    }
+    grid-area: pocket;
   }
 
   .curiosity-bg {
-    h2 {
-      grid-area: curiosity;
-    }
+    grid-area: curiosity;
   }
 
   .fisheye-bg {
-    h2 {
-      grid-area: fisheye;
-    }
+    grid-area: fisheye;
   }
 
   .deep__earth-bg {
@@ -238,6 +222,7 @@
     align-items: center;
     justify-content: center;
     margin: 2.5rem 0 7.5rem 0;
+    grid-area: btn;
 
     button {
       text-transform: uppercase;
