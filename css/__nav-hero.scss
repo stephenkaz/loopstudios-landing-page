@@ -8,7 +8,6 @@ $ff-1: "Alata", sans-serif;
 $ff-2: "Josefin Sans", sans-serif;
 
 .header-bg-img {
-  grid-area: nav;
   background-image: linear-gradient(
       to right,
       rgba(0, 0, 0, 0.4),
@@ -23,11 +22,12 @@ $ff-2: "Josefin Sans", sans-serif;
   }
 
   nav {
-    grid-area: nav;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    margin-top: 2rem;
+    justify-content: space-between;
+    padding-top: 2rem;
+    max-width: 90%;
+    margin: auto;
 
     .nav__links {
       display: none;

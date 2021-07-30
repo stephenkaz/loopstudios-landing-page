@@ -8,7 +8,6 @@ $ff-1: "Alata", sans-serif;
 $ff-2: "Josefin Sans", sans-serif;
 
 .about {
-  grid-area: about;
   display: flex;
   flex-direction: column;
   padding: 1.5rem;
@@ -28,11 +27,11 @@ $ff-2: "Josefin Sans", sans-serif;
       font-family: $ff-2;
       font-weight: 300;
       text-transform: uppercase;
-      padding-bottom: 1.5rem;
+      padding: 1.5rem 0;
     }
 
     p {
-      padding: 0 2rem 7rem 2rem;
+      padding: 0 1rem 7rem 1rem;
       line-height: 2;
       font-family: $ff-1;
       color: $veryDarkGray;

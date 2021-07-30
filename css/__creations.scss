@@ -7,144 +7,101 @@ $veryDarkGray: hsl(0, 0%, 41%);
 $ff-1: "Alata", sans-serif;
 $ff-2: "Josefin Sans", sans-serif;
 
-.creations__title {
-  text-align: center;
-  font-family: $ff-2;
-  font-weight: 300;
-  text-transform: uppercase;
-  padding-bottom: 2rem;
+.deep__earth-d,
+.night__arcade-d,
+.soccer__team-d,
+.the__grid-d,
+.from__above-d,
+.pocket__borealis-d,
+.curiosity-d,
+.fisheye-d {
+  img {
+    display: none;
+  }
 }
 
-.creations__title {
-  grid-area: creations;
-}
+.creations {
+  padding: 0 1.25rem;
 
-.deep__earth-bg {
-  grid-area: deep;
-}
+  h1 {
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: center;
+    padding-bottom: 3rem;
+  }
 
-.night__arcade-bg {
-  grid-area: night;
-}
+  section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
 
-.soccer__team-bg {
-  grid-area: soccer;
-}
+    .deep__earth,
+    .night__arcade,
+    .soccer__team,
+    .the__grid,
+    .from__above,
+    .pocket__borealis,
+    .curiosity,
+    .fisheye {
+      transition: 0.2s ease;
+      background: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.65) 100%
+      );
+      position: relative;
 
-.the__grid-bg {
-  grid-area: grid;
-}
+      &:hover {
+        background: rgba(255, 255, 255, 0.6);
+        h2 {
+          color: black;
+        }
+      }
 
-.from__above-bg {
-  grid-area: above;
-}
+      .deep__earth-m,
+      .night__arcade-m,
+      .soccer__team-m,
+      .the__grid-m,
+      .from__above-m,
+      .pocket__borealis-m,
+      .curiosity-m,
+      .fisheye-m {
+        img {
+          position: relative;
+          z-index: -1;
+          display: block;
+          width: 100%;
+        }
+      }
 
-.pocket__borealis-bg {
-  grid-area: pocket;
-}
+      h2 {
+        position: absolute;
+        color: $white;
+        font-weight: 300;
+        bottom: 1rem;
+        left: 1rem;
+      }
+    }
+  }
+  .see__all {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 6rem;
+    .see__all-btn {
+      padding: 0.5rem 2.5rem;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      background-color: transparent;
+      font-size: 1rem;
+      font-family: $ff-1;
+      transition: 0.2s ease;
 
-.curiosity-bg {
-  grid-area: curiosity;
-}
-
-.fisheye-bg {
-  grid-area: fisheye;
-}
-
-.deep__earth-bg {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.1)),
-    url(/images/mobile/image-deep-earth.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.night__arcade-bg {
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.527),
-      rgba(0, 0, 0, 0.1)
-    ),
-    url(/images/mobile/image-night-arcade.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.soccer__team-bg {
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.527),
-      rgba(0, 0, 0, 0.1)
-    ),
-    url(/images/mobile/image-soccer-team.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.the__grid-bg {
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.527),
-      rgba(0, 0, 0, 0.1)
-    ),
-    url(/images/mobile/image-grid.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.from__above-bg {
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.527),
-      rgba(0, 0, 0, 0.1)
-    ),
-    url(/images/mobile/image-from-above.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.pocket__borealis-bg {
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.527),
-      rgba(0, 0, 0, 0.1)
-    ),
-    url(/images/mobile/image-pocket-borealis.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.curiosity-bg {
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.527),
-      rgba(0, 0, 0, 0.1)
-    ),
-    url(/images/mobile/image-curiosity.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.fisheye-bg {
-  background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.527),
-      rgba(0, 0, 0, 0.1)
-    ),
-    url(/images/mobile/image-fisheye.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.see__all {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 2.5rem 0 7.5rem 0;
-  grid-area: btn;
-
-  button {
-    text-transform: uppercase;
-    letter-spacing: 0.25rem;
-    font-family: $ff-1;
-    font-size: 1rem;
-
-    background-color: $white;
-    padding: 0.5rem 2.5rem;
-
-    grid-area: btn;
+      &:hover {
+        background: black;
+        color: $white;
+      }
+    }
   }
 }

@@ -14,25 +14,20 @@ $veryDarkGray: hsl(0, 0%, 41%);
 $ff-1: "Alata", sans-serif;
 $ff-2: "Josefin Sans", sans-serif;
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $ff-2;
+  text-transform: uppercase;
+}
+
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-main {
-  display: grid;
-  height: 100vh;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-areas:
-    "nav nav nav nav"
-    "hero hero hero hero"
-    "about about about about"
-    "creations creations creations creations"
-    "deep night soccer grid"
-    "above pocket curiosity fisheye"
-    "btn btn btn btn"
-    "footer footer footer footer";
 }
