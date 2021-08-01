@@ -128,7 +128,7 @@ li {
   padding: 0 1.25rem;
 }
 
-.creations .creations__header .see__all-btn {
+.creations .creations__header .see__all-d .see__all-btn {
   display: none;
 }
 
@@ -269,7 +269,7 @@ li {
   left: 1rem;
 }
 
-.creations .see__all {
+.creations .see__all-m {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -283,7 +283,7 @@ li {
   padding-bottom: 6rem;
 }
 
-.creations .see__all .see__all-btn {
+.creations .see__all-m .see__all-btn {
   padding: 0.5rem 2.5rem;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -294,27 +294,40 @@ li {
   transition: 0.2s ease;
 }
 
-.creations .see__all .see__all-btn:hover {
+.creations .see__all-m .see__all-btn:hover {
   background: black;
   color: white;
 }
 
 .footer {
   background-color: black;
+  width: 100%;
 }
 
-.footer .footer__logo {
-  padding: 4rem 0 2rem 0;
+.footer .footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.footer .footer__logo img {
+.footer .footer__container .footer__left .logo {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+  width: 80%;
+  margin: 4rem auto 2rem auto;
 }
 
-.footer .footer__nav nav ul {
+.footer .footer__container .footer__left nav ul {
+  font-family: "Alata", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -329,40 +342,36 @@ li {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 1.5rem;
-  padding-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
-.footer .footer__nav nav ul li {
-  list-style-type: none;
-  color: white;
-  font-family: "Alata", sans-serif;
+.footer .footer__container .footer__right {
+  text-align: center;
 }
 
-.footer .footer__social {
+.footer .footer__container .footer__right .footer__icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 1rem;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  max-width: 60%;
+  margin: 1.5rem auto;
 }
 
-.footer .copyright {
+.footer .footer__container .footer__right .copyright {
   color: dimgray;
-  text-align: center;
   font-family: "Alata", sans-serif;
-  padding: 1rem 0 4rem 0;
 }
 
 @media only screen and (min-width: 64.063em) {
   .header-bg-img {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.1))), url(/images/desktop/image-hero.jpg);
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url(/images/desktop/image-hero.jpg);
-    background-size: 100%;
   }
   .header-bg-img .open-nav {
     display: none;
@@ -410,7 +419,6 @@ li {
     margin-left: 10.5rem;
   }
   .header-bg-img .hero__container .hero__content h1 {
-    width: 100%;
     font-size: 4rem;
     margin: 0;
     padding: 2rem;
@@ -456,7 +464,7 @@ li {
     width: 100%;
     display: block;
   }
-  .creations .see__all-btn {
+  .creations .see__all-m .see__all-btn {
     display: none;
   }
   .creations .creations__header {
@@ -472,15 +480,28 @@ li {
     max-width: 80%;
     margin: auto;
   }
-  .creations .creations__header .see__all-btn {
+  .creations .creations__header .see__all-d {
+    padding-bottom: 3rem;
+  }
+  .creations .creations__header .see__all-d .see__all-btn {
     display: block;
+    padding: 0.5rem 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    background-color: transparent;
+    font-size: 1rem;
+    font-family: "Alata", sans-serif;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  .creations .creations__header .see__all-d .see__all-btn:hover {
+    background: black;
+    color: white;
   }
   .creations h1 {
     font-size: 3rem;
   }
   .creations section {
-    display: -ms-grid;
-    display: grid;
     -ms-grid-columns: (0.5fr)[4];
         grid-template-columns: repeat(4, 0.5fr);
     max-width: 80%;
@@ -499,7 +520,6 @@ li {
     transition: 0.2s ease;
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.6)));
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
-    position: relative;
   }
   .creations section .deep__earth .deep__earth-m,
   .creations section .deep__earth .night__arcade-m,
@@ -580,6 +600,58 @@ li {
     bottom: 2rem;
     left: 2rem;
   }
+  .footer .footer__container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 78%;
+    margin: auto;
+    padding: 2rem 0;
+  }
+  .footer .footer__container .footer__left {
+    text-align: left;
+  }
+  .footer .footer__container .footer__left .logo {
+    width: 50%;
+    margin: 0;
+    text-align: left;
+    padding-bottom: 2rem;
+  }
+  .footer .footer__container .footer__left nav ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-bottom: 2rem;
+    text-align: right;
+  }
+  .footer .footer__container .footer__right .footer__icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: right;
+    max-width: 50%;
+    margin: 0 0 0 auto;
+    padding-bottom: 2rem;
+    gap: 1rem;
+  }
+  .footer .footer__container .footer__right .copyright {
+    color: dimgray;
+    font-family: "Alata", sans-serif;
+  }
+  body .attribution {
+    padding: 0;
+  }
 }
 
 h1,
@@ -599,5 +671,17 @@ h6 {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.attribution {
+  font-size: 0.7rem;
+  text-align: center;
+  color: gray;
+  padding: 2rem 0;
+  background-color: black;
+}
+
+.attribution a {
+  color: #3e52a3;
 }
 /*# sourceMappingURL=main.css.map */

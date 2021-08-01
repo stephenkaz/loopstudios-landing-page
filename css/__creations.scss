@@ -22,8 +22,10 @@ $ff-2: "Josefin Sans", sans-serif;
 
 .creations {
   .creations__header {
-    .see__all-btn {
-      display: none;
+    .see__all-d {
+      .see__all-btn {
+        display: none;
+      }
     }
   }
   padding: 0 1.25rem;
@@ -88,7 +90,7 @@ $ff-2: "Josefin Sans", sans-serif;
       }
     }
   }
-  .see__all {
+  .see__all-m {
     display: flex;
     align-items: center;
     justify-content: center;
