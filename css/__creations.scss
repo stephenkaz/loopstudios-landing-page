@@ -96,19 +96,19 @@ $ff-2: "Josefin Sans", sans-serif;
     justify-content: center;
     padding-top: 2rem;
     padding-bottom: 6rem;
-    .see__all-btn {
-      padding: 0.5rem 2.5rem;
-      text-transform: uppercase;
-      letter-spacing: 5px;
-      background-color: transparent;
-      font-size: 1rem;
-      font-family: $ff-1;
-      transition: 0.2s ease;
+  }
+  .see__all-btn {
+    padding: 0.5rem 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    background-color: transparent;
+    font-size: 1rem;
+    font-family: $ff-1;
+    transition: 0.2s ease;
 
-      &:hover {
-        background: black;
-        color: $white;
-      }
+    &:hover {
+      background: black;
+      color: $white;
     }
   }
 }
