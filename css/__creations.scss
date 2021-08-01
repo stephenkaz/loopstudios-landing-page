@@ -7,21 +7,26 @@ $veryDarkGray: hsl(0, 0%, 41%);
 $ff-1: "Alata", sans-serif;
 $ff-2: "Josefin Sans", sans-serif;
 
-.deep__earth-d,
-.night__arcade-d,
-.soccer__team-d,
-.the__grid-d,
-.from__above-d,
-.pocket__borealis-d,
-.curiosity-d,
-.fisheye-d {
-  img {
-    display: none;
-  }
-}
-
 .creations {
+  .deep__earth-d,
+  .night__arcade-d,
+  .soccer__team-d,
+  .the__grid-d,
+  .from__above-d,
+  .pocket__borealis-d,
+  .curiosity-d,
+  .fisheye-d {
+    img {
+      display: none;
+    }
+  }
   .creations__header {
+    h1 {
+      font-size: 2rem;
+      font-weight: 300;
+      text-align: center;
+      padding-bottom: 3rem;
+    }
     .see__all-d {
       .see__all-btn {
         display: none;
@@ -29,13 +34,6 @@ $ff-2: "Josefin Sans", sans-serif;
     }
   }
   padding: 0 1.25rem;
-
-  h1 {
-    font-size: 2rem;
-    font-weight: 300;
-    text-align: center;
-    padding-bottom: 3rem;
-  }
 
   section {
     display: grid;

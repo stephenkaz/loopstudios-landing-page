@@ -113,30 +113,30 @@ li {
   color: dimgray;
 }
 
-.deep__earth-d img,
-.night__arcade-d img,
-.soccer__team-d img,
-.the__grid-d img,
-.from__above-d img,
-.pocket__borealis-d img,
-.curiosity-d img,
-.fisheye-d img {
-  display: none;
-}
-
 .creations {
   padding: 0 1.25rem;
 }
 
-.creations .creations__header .see__all-d .see__all-btn {
+.creations .deep__earth-d img,
+.creations .night__arcade-d img,
+.creations .soccer__team-d img,
+.creations .the__grid-d img,
+.creations .from__above-d img,
+.creations .pocket__borealis-d img,
+.creations .curiosity-d img,
+.creations .fisheye-d img {
   display: none;
 }
 
-.creations h1 {
+.creations .creations__header h1 {
   font-size: 2rem;
   font-weight: 300;
   text-align: center;
   padding-bottom: 3rem;
+}
+
+.creations .creations__header .see__all-d .see__all-btn {
+  display: none;
 }
 
 .creations section {
@@ -283,7 +283,7 @@ li {
   padding-bottom: 6rem;
 }
 
-.creations .see__all-m .see__all-btn {
+.creations .see__all-btn {
   padding: 0.5rem 2.5rem;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -294,7 +294,7 @@ li {
   transition: 0.2s ease;
 }
 
-.creations .see__all-m .see__all-btn:hover {
+.creations .see__all-btn:hover {
   background: black;
   color: white;
 }
@@ -451,14 +451,14 @@ li {
   .about .about__content p {
     padding: 0;
   }
-  .deep__earth-d img,
-  .night__arcade-d img,
-  .soccer__team-d img,
-  .the__grid-d img,
-  .from__above-d img,
-  .pocket__borealis-d img,
-  .curiosity-d img,
-  .fisheye-d img {
+  .creations .deep__earth-d img,
+  .creations .night__arcade-d img,
+  .creations .soccer__team-d img,
+  .creations .the__grid-d img,
+  .creations .from__above-d img,
+  .creations .pocket__borealis-d img,
+  .creations .curiosity-d img,
+  .creations .fisheye-d img {
     position: relative;
     z-index: -1;
     width: 100%;
@@ -502,8 +502,8 @@ li {
     font-size: 3rem;
   }
   .creations section {
-    -ms-grid-columns: (0.5fr)[4];
-        grid-template-columns: repeat(4, 0.5fr);
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
     max-width: 80%;
     margin: auto;
     gap: 1.5rem;

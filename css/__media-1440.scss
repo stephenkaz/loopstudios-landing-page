@@ -90,23 +90,22 @@
     }
   }
 
-  .deep__earth-d,
-  .night__arcade-d,
-  .soccer__team-d,
-  .the__grid-d,
-  .from__above-d,
-  .pocket__borealis-d,
-  .curiosity-d,
-  .fisheye-d {
-    img {
-      position: relative;
-      z-index: -1;
-      width: 100%;
-      display: block;
-    }
-  }
-
   .creations {
+    .deep__earth-d,
+    .night__arcade-d,
+    .soccer__team-d,
+    .the__grid-d,
+    .from__above-d,
+    .pocket__borealis-d,
+    .curiosity-d,
+    .fisheye-d {
+      img {
+        position: relative;
+        z-index: -1;
+        width: 100%;
+        display: block;
+      }
+    }
     .see__all-m {
       .see__all-btn {
         display: none;
@@ -121,6 +120,21 @@
       margin: auto;
       .see__all-d {
         padding-bottom: 3rem;
+        .see__all-btn {
+          display: block;
+          padding: 0.5rem 2.5rem;
+          text-transform: uppercase;
+          letter-spacing: 5px;
+          background-color: transparent;
+          font-size: 1rem;
+          font-family: $ff-1;
+          transition: 0.2s ease;
+
+          &:hover {
+            background: black;
+            color: $white;
+          }
+        }
       }
     }
 
@@ -129,7 +143,7 @@
     }
 
     section {
-      grid-template-columns: repeat(4, 0.5fr);
+      grid-template-columns: repeat(4, 1fr);
       max-width: 80%;
       margin: auto;
       gap: 1.5rem;
