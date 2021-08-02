@@ -48,6 +48,13 @@ li {
 .header-bg-img nav .nav__links li a {
   color: white;
   font-family: "Alata", sans-serif;
+  border-bottom: 3px solid transparent;
+  -webkit-transition: 150ms ease-in;
+  transition: 150ms ease-in;
+}
+
+.header-bg-img nav .nav__links li a:hover {
+  border-bottom: 4px solid white;
 }
 
 .header-bg-img .hero__content {
@@ -384,9 +391,10 @@ li {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    max-width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 80%;
     margin: auto;
   }
   .header-bg-img nav .nav__links {
@@ -400,6 +408,9 @@ li {
         justify-content: space-around;
     width: 35%;
   }
+  .header-bg-img nav .nav__links::hover {
+    border-bottom: 3px solid white;
+  }
   .header-bg-img .hero__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -407,16 +418,17 @@ li {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
-    margin-left: 1rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 80%;
+    margin: auto;
   }
   .header-bg-img .hero__container .hero__content {
-    width: 40%;
-    margin-top: 9rem;
-    margin-bottom: 8rem;
-    margin-left: 10.5rem;
+    text-align: left;
+    display: block;
+    width: 50%;
+    margin: 9rem 0;
   }
   .header-bg-img .hero__container .hero__content h1 {
     font-size: 4rem;
@@ -433,7 +445,7 @@ li {
     background-image: url(/images/desktop/image-interactive.jpg);
     width: 50%;
     padding: 15rem;
-    margin: 6rem auto 1.5rem 10rem;
+    margin: 6rem auto 1.5rem 9rem;
   }
   .about .about__content {
     position: absolute;
