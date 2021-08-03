@@ -18,7 +18,7 @@
       ),
       url(/images/desktop/image-hero.jpg);
 
-    .open-nav {
+    .hamburger {
       display: none;
     }
 
@@ -32,9 +32,28 @@
 
       .nav__links {
         display: flex;
+        flex-direction: row;
         align-items: center;
         justify-content: space-around;
         width: 35%;
+        position: relative;
+        padding: 0;
+        transform: none;
+        background: transparent;
+        font-family: $ff-1;
+
+        text-transform: capitalize;
+        font-size: 1.25rem;
+
+        li {
+          list-style-type: none;
+
+          a {
+            color: $white;
+            font-family: $ff-1;
+            border-bottom: 3px solid transparent;
+          }
+        }
       }
     }
 
@@ -211,6 +230,7 @@
       }
 
       .footer__right {
+        padding-bottom: 0;
         .footer__icons {
           display: flex;
           align-items: center;

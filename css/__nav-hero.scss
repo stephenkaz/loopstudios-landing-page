@@ -17,8 +17,19 @@ $ff-2: "Josefin Sans", sans-serif;
   background-repeat: no-repeat;
   background-size: 100%;
 
-  .open-nav {
+  .logo,
+  .hamburger {
+    z-index: 2;
+  }
+  .hamburger {
     display: block;
+
+    div {
+      width: 1.5625rem;
+      height: 0.1875rem;
+      background-color: $white;
+      margin: 0.3125rem;
+    }
   }
 
   nav {
@@ -30,20 +41,26 @@ $ff-2: "Josefin Sans", sans-serif;
     margin: auto;
 
     .nav__links {
-      display: none;
-
-      li {
-        list-style-type: none;
-
-        a {
-          color: $white;
-          font-family: $ff-1;
-          border-bottom: 3px solid transparent;
-          transition: 150ms ease-in;
-
-          &:hover {
-            border-bottom: 4px solid white;
-          }
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background-color: black;
+      padding: 19rem 0 0 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      font-family: $ff-2;
+      font-weight: 300;
+      text-transform: uppercase;
+      font-size: 2.3rem;
+      z-index: 1;
+      transform: translateX(100%);
+      a {
+        transition: 100ms ease;
+        &:hover {
+          border-bottom: 4px solid white;
         }
       }
     }

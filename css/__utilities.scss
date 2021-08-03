@@ -19,3 +19,10 @@ a {
 li {
   cursor: pointer;
 }
+
+.nav-active {
+  display: block;
+  background-color: black;
+  max-width: 100%;
+  height: 100vh;
+}
