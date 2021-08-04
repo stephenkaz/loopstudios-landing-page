@@ -520,6 +520,7 @@ li {
     font-size: 1.25rem;
   }
   .header-bg-img nav .nav__links li {
+    opacity: 1;
     list-style-type: none;
   }
   .header-bg-img nav .nav__links li a {
