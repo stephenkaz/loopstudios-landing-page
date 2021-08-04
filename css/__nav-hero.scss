@@ -30,6 +30,7 @@ $ff-2: "Josefin Sans", sans-serif;
       height: 0.1875rem;
       background-color: $white;
       margin: 0.3125rem;
+      transition: all 0.3s ease;
     }
   }
 
@@ -73,6 +74,27 @@ $ff-2: "Josefin Sans", sans-serif;
 
     .nav-active {
       transform: translateX(0);
+    }
+
+    .toggle .line1 {
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    .toggle .line2 {
+      opacity: 0;
+    }
+    .toggle .line3 {
+      transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    @keyframes navLinkFade {
+      from {
+        opacity: 0;
+        transform: translateX(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0px);
+      }
     }
   }
 
