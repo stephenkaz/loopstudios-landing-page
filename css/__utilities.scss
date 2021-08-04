@@ -7,6 +7,10 @@ $veryDarkGray: hsl(0, 0%, 41%);
 $ff-1: "Alata", sans-serif;
 $ff-2: "Josefin Sans", sans-serif;
 
+body {
+  overflow-x: hidden;
+}
+
 .hidden {
   display: none;
 }

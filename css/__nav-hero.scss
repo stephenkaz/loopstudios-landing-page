@@ -23,6 +23,7 @@ $ff-2: "Josefin Sans", sans-serif;
   }
   .hamburger {
     display: block;
+    cursor: pointer;
 
     div {
       width: 1.5625rem;
@@ -57,12 +58,21 @@ $ff-2: "Josefin Sans", sans-serif;
       font-size: 2.3rem;
       z-index: 1;
       transform: translateX(100%);
-      a {
-        transition: 100ms ease;
-        &:hover {
-          border-bottom: 4px solid white;
+      transition: transform 0.5s ease-in;
+
+      li {
+        opacity: 0;
+        a {
+          transition: 100ms ease;
+          &:hover {
+            border-bottom: 4px solid white;
+          }
         }
       }
+    }
+
+    .nav-active {
+      transform: translateX(0);
     }
   }
 
